@@ -3,4 +3,4 @@ def printing(x):
     print(x)
     
 # ---Main---
-printing("Hello snake!")
+printing("Hello new snake!")
