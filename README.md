@@ -1,1 +1,1 @@
-Small test project with Python
+Small test project on Python
