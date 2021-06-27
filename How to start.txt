@@ -1,1 +1,3 @@
 Shift + RMB -> Start command window -> python ChatServer.py
+
+in Notepad++ F5 -> cmd /K python "$(FULL_CURRENT_PATH)"
