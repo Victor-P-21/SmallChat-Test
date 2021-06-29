@@ -3,4 +3,4 @@ def printing(x):
     print(x)
     
 # ---Main---
-printing("Chat Server main file in dev now")
+printing("Chat Client main file in dev now")
