@@ -4,7 +4,8 @@ import clientui
 import PyQt6
 from PyQt6 import QtCore, QtGui, QtWidgets
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)        #1 Открытый поток (SOCK_STREAM)
+
 class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -12,7 +13,7 @@ class Messenger(QtWidgets.QMainWindow, clientui.Ui_MainWindow):
 
         self.sendButton.pressed.connect(self.send_message)
 
-    def send_message(self):
+    def send_message(self):        #2 переконнект на не закрытый проток, тебе нужно отсылать а не переподключаться
         while True:
             self.chatBrowser.append('Try connect to the server...')
             try:
